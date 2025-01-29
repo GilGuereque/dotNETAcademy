@@ -1,1 +1,2 @@
-GET http://localhost:5134
+// Send GET http request
+GET http://localhost:5134 
