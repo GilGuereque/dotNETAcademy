@@ -1,2 +1,2 @@
 // Send GET http request
-GET http://localhost:5134 
+GET http://localhost:5134/games 
