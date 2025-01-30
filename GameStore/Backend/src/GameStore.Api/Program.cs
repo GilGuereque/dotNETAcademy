@@ -27,10 +27,12 @@ List<Game> games =
         Price = 49.99M,
         ReleaseDate = new DateOnly(2004, 11, 23)
     }
-]
+];
 
 // the request pipeline
-app.MapGet("/", () => "Hello World!");
+
+// GET /games (pattern)
+app.MapGet("/games", () => games);
 // in this case we say any requests that arrive, 
 // we will reply with Hello World!
 app.Run();
