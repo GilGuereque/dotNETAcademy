@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 // these lines are all about configuring this build
 var app = builder.Build();
 
+const string GetGameEndpointName = "GetGame";
+
 List<Game> games =
 [
     new Game {
@@ -42,8 +44,20 @@ app.MapGet("/games/{id}", (Guid id) =>
     Game? game = games.Find(game => game.Id == id);
 
     return game is null ? Results.NotFound() : Results.Ok(game);
-});
+})
+.WithName(GetGameEndpointName); //Identify endpoint url for GET
 
 // POST /games
+app.MapPost("/games", (Game game) =>
+{
+    game.Id = Guid.NewGuid();
+    games.Add(game);
+
+    return Results.CreatedAtRoute(
+        GetGameEndpointName,
+        new { id = game.Id },
+        game);
+});
+
 
 app.Run();
