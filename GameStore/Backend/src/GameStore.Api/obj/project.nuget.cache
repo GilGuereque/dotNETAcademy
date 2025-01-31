@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "swIlVPVUZoY=",
+  "dgSpecHash": "aayO3FrYpvU=",
   "success": true,
   "projectFilePath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\minimalapis.extensions\\0.11.0\\minimalapis.extensions.0.11.0.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\minivalidation\\0.8.0\\minivalidation.0.8.0.nupkg.sha512"
+  ],
   "logs": []
 }

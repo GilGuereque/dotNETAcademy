@@ -50,6 +50,11 @@ app.MapGet("/games/{id}", (Guid id) =>
 // POST /games
 app.MapPost("/games", (Game game) =>
 {
+    if (string.IsNullOrEmpty(game.Name))
+    {
+        return Results.BadRequest("Name is required in the payload.");
+    }
+
     game.Id = Guid.NewGuid();
     games.Add(game);
 
@@ -57,7 +62,7 @@ app.MapPost("/games", (Game game) =>
         GetGameEndpointName,
         new { id = game.Id },
         game);
-});
-
+})
+.WithParameterValidation();
 
 app.Run();
