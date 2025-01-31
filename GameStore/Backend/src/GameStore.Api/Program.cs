@@ -33,6 +33,17 @@ List<Game> games =
 
 // GET /games (pattern)
 app.MapGet("/games", () => games);
-// in this case we say any requests that arrive, 
-// we will reply with Hello World!
+
+// GET /games/id
+app.MapGet("/games/{id}", (Guid id) =>
+{
+    Console.WriteLine($"Searching for game with ID: {id}");
+
+    Game? game = games.Find(game => game.Id == id);
+
+    return game is null ? Results.NotFound() : Results.Ok(game);
+});
+
+// POST /games
+
 app.Run();
