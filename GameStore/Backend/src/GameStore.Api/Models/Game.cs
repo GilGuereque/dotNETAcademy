@@ -12,13 +12,13 @@ public class Game
     [StringLength(50)]
     public required string Name { get; set; } //? makes the string able to be null, otherwise you would assign it an empty string
 
-    [Required]
-    [StringLength(20)]
-    public required string Genre { get; set; }
+    public required Genre Genre { get; set; }
 
     [Required]
     [Range(1, 100)]
     public decimal Price { get; set; }
 
     public DateOnly ReleaseDate { get; set; } // we only care about the specific date
+
+    public required string Description { get; set; }
 }
