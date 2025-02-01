@@ -2,7 +2,7 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/278389f3-2033-4530-9456-b7d6cb60891b
+GET http://localhost:5134/games/398f7e56-8c94-4207-8de8-9e773362ae13
 
 ###
 POST http://localhost:5134/games
@@ -28,3 +28,6 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:5134/games/23074939-9bf5-44ed-be6c-30f79d3e3340
+
+###
+GET http://localhost:5134/genres

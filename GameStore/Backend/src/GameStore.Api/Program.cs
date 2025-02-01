@@ -46,7 +46,13 @@ List<Game> games =
 // the request pipeline
 
 // GET /games (pattern)
-app.MapGet("/games", () => games);
+app.MapGet("/games", () => games.Select(game => new GameSummaryDto(
+    game.Id,
+    game.Name,
+    game.Genre.Name,
+    game.Price,
+    game.ReleaseDate
+)));
 
 // GET /games/id
 app.MapGet("/games/{id}", (Guid id) =>
@@ -55,7 +61,16 @@ app.MapGet("/games/{id}", (Guid id) =>
 
     Game? game = games.Find(game => game.Id == id);
 
-    return game is null ? Results.NotFound() : Results.Ok(game);
+    return game is null ? Results.NotFound() : Results.Ok(
+        new GameDetailsDto(
+            game.Id,
+            game.Name,
+            game.Genre.Id,
+            game.Price,
+            game.ReleaseDate,
+            game.Description
+        )
+    );
 })
 .WithName(GetGameEndpointName); //Identify endpoint url for GET
 
@@ -104,6 +119,10 @@ app.MapDelete("/games/{id}", (Guid id) =>
     return Results.NoContent();
 });
 
+// GET /genres
+app.MapGet("/genres", () => 
+    genres.Select(genre => new GenreDto(genre.Id, genre.Name)));
+
 app.Run();
 
 public record GameDetailsDto(
@@ -112,4 +131,18 @@ public record GameDetailsDto(
     Guid GenreId,
     decimal Price,
     DateOnly ReleaseDate,
-    string Description);
+    string Description
+);
+
+public record GameSummaryDto(
+    Guid Id,
+    string Name,
+    string Genre,
+    decimal Price,
+    DateOnly ReleaseDate
+);
+
+public record GenreDto(
+    Guid Id,
+    string Name
+);
