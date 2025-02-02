@@ -2,7 +2,7 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/15e435df-7e0b-4021-affc-963c8154a819
+GET http://localhost:5134/games/12cafc15-ca4f-4017-bc96-0322c7abd3a8
 
 ###
 POST http://localhost:5134/games
@@ -17,14 +17,15 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5134/games/62f0fd07-8b57-4cc6-a1c1-8038dbc85022
+PUT http://localhost:5134/games/12cafc15-ca4f-4017-bc96-0322c7abd3a8
 Content-Type: application/json
 
 {
     "name": "Street Fighter II Turbo",
-    "genre": "Fighting",
+    "genreId": "524c6596-dc0c-4de6-ab5e-eebcbeefa162",
     "price": 9.99,
-    "releaseDate": "1992-07-15"
+    "releaseDate": "1992-07-15",
+    "description": "Street Fighter II Turbo is a high-speed arcade fighting game that refines the classic Street Fighter II experience with faster gameplay, new move sets, and enhanced competitive balance. Players choose from a roster of iconic fighters, each with unique abilities, to engage in intense one-on-one battles. Featuring improved mechanics, faster combat, and the introduction of Turbo mode, this edition delivers the ultimate test of skill and strategy for fighting game enthusiasts."
 }
 
 ###
