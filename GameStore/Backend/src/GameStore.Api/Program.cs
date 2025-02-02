@@ -6,7 +6,7 @@ var app = builder.Build();
 
 const string GetGameEndpointName = "GetGame";
 
-List<Genre> genres = 
+List<Genre> genres =
 [
     new Genre { Id = new Guid("524c6596-dc0c-4de6-ab5e-eebcbeefa162"), Name = "Fighting"},
     new Genre { Id = new Guid("17cf2925-6965-4716-b21b-26a0968596b0"), Name = "Roleplaying"},
@@ -120,14 +120,14 @@ app.MapDelete("/games/{id}", (Guid id) =>
 });
 
 // GET /genres
-app.MapGet("/genres", () => 
+app.MapGet("/genres", () =>
     genres.Select(genre => new GenreDto(genre.Id, genre.Name)));
 
 app.Run();
 
 public record GameDetailsDto(
-    Guid Id, 
-    string Name, 
+    Guid Id,
+    string Name,
     Guid GenreId,
     decimal Price,
     DateOnly ReleaseDate,
