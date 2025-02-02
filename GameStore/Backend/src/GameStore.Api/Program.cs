@@ -46,7 +46,7 @@ List<Game> games =
 
 // the request pipeline
 
-// GET /games (pattern)
+// GET /games (retrieve all existing games)
 app.MapGet("/games", () => games.Select(game => new GameSummaryDto(
     game.Id,
     game.Name,
@@ -55,7 +55,7 @@ app.MapGet("/games", () => games.Select(game => new GameSummaryDto(
     game.ReleaseDate
 )));
 
-// GET /games/id
+// GET /games/id (retrieve a specific game)
 app.MapGet("/games/{id}", (Guid id) =>
 {
     Console.WriteLine($"Searching for game with ID: {id}");
@@ -75,7 +75,7 @@ app.MapGet("/games/{id}", (Guid id) =>
 })
 .WithName(GetGameEndpointName); //Identify endpoint url for GET
 
-// POST /games
+// POST /games (add a new game)
 app.MapPost("/games", (CreateGameDto gameDto) =>
 {
     var genre = genres.Find(genre => genre.Id == gameDto.GenreId);
@@ -111,8 +111,8 @@ app.MapPost("/games", (CreateGameDto gameDto) =>
 })
 .WithParameterValidation();
 
-// PUT /games/id
-app.MapPut("/games/{id}", (Guid id, Game updatedGame) =>
+// PUT /games/id (update game)
+app.MapPut("/games/{id}", (Guid id, UpdateGameDto gameDto) =>
 {
     var existingGame = games.Find(game => game.Id == id);
 
@@ -121,10 +121,18 @@ app.MapPut("/games/{id}", (Guid id, Game updatedGame) =>
         return Results.NotFound();
     }
 
-    existingGame.Name = updatedGame.Name;
-    existingGame.Genre = updatedGame.Genre;
-    existingGame.Price = updatedGame.Price;
-    existingGame.ReleaseDate = updatedGame.ReleaseDate;
+    var genre = genres.Find(genre => genre.Id == gameDto.GenreId);
+
+    if (genre is null)
+    {
+        return Results.BadRequest("Invalid Genre ID. Please use a valid one.");
+    }
+
+    existingGame.Name = gameDto.Name;
+    existingGame.Genre = genre;
+    existingGame.Price = gameDto.Price;
+    existingGame.ReleaseDate = gameDto.ReleaseDate;
+    existingGame.Description = gameDto.Description;
 
     return Results.NoContent();
 })
