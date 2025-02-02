@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using GameStore.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -140,6 +141,14 @@ public record GameSummaryDto(
     string Genre,
     decimal Price,
     DateOnly ReleaseDate
+);
+
+public record CreateGameDto(
+    [Required][StringLength(50)] string Name,
+    Guid GenreId,
+    [Range(1, 100)] decimal Price,
+    DateOnly ReleaseDate,
+    [Required][StringLength(500)] string Description
 );
 
 public record GenreDto(
