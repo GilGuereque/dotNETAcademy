@@ -76,20 +76,38 @@ app.MapGet("/games/{id}", (Guid id) =>
 .WithName(GetGameEndpointName); //Identify endpoint url for GET
 
 // POST /games
-app.MapPost("/games", (Game game) =>
+app.MapPost("/games", (CreateGameDto gameDto) =>
 {
-    if (string.IsNullOrEmpty(game.Name))
+    var genre = genres.Find(genre => genre.Id == gameDto.GenreId);
+
+    if (genre is null)
     {
-        return Results.BadRequest("Name is required in the payload.");
+        return Results.BadRequest("Invalid Genre ID. Please use a valid one.");
     }
 
-    game.Id = Guid.NewGuid();
+    var game = new Game
+    {
+        Id = Guid.NewGuid(),
+        Name = gameDto.Name,
+        Genre = genre,
+        Price = gameDto.Price,
+        ReleaseDate = gameDto.ReleaseDate,
+        Description = gameDto.Description
+    };
+
     games.Add(game);
 
     return Results.CreatedAtRoute(
         GetGameEndpointName,
         new { id = game.Id },
-        game);
+        new GameDetailsDto(
+            game.Id,
+            game.Name,
+            game.Genre.Id,
+            game.Price,
+            game.ReleaseDate,
+            game.Description
+        ));
 })
 .WithParameterValidation();
 
