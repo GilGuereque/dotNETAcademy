@@ -2,7 +2,7 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/92385b05-0290-4c66-aa76-c9ba26589641
+GET http://localhost:5134/games/15e435df-7e0b-4021-affc-963c8154a819
 
 ###
 POST http://localhost:5134/games
@@ -10,9 +10,10 @@ Content-Type: application/json
 
 {
     "name": "Minecraft",
-    "genre": "Kids and Family",
+    "genreId": "28b7722e-aa09-4bf7-ac06-d8632b50f5dd",
     "price": 19.99,
-    "releaseDate": "2011-11-18"
+    "releaseDate": "2011-11-18",
+    "description": "Minecraft is a sandbox adventure game that allows players to explore, build, and survive in an infinite, block-based world. Featuring limitless creativity, players can construct massive structures, mine for resources, craft tools, and battle hostile creatures. With multiple game modes including Survival, Creative, and Multiplayer, Minecraft offers a unique blend of exploration, creativity, and strategy, making it one of the most popular and influential games of all time."
 }
 
 ###
