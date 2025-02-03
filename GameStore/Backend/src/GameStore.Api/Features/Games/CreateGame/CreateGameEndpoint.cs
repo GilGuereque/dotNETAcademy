@@ -13,7 +13,7 @@ public static class CreateGameEndpoint
     )
     {
         // POST /games (add a new game)
-        app.MapPost("/games", (CreateGameDto gameDto) =>
+        app.MapPost("/", (CreateGameDto gameDto) =>
         {
             var genre = data.GetGenre(gameDto.GenreId);
 

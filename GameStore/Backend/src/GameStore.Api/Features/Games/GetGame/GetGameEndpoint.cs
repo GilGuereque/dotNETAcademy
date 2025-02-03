@@ -12,7 +12,7 @@ public static class GetGameEndpoint
         GameStoreData data)
     {
         // GET /games/id (retrieve a specific game)
-        app.MapGet("/games/{id}", (Guid id) =>
+        app.MapGet("/{id}", (Guid id) =>
         {
 
             Game? game = data.GetGame(id);

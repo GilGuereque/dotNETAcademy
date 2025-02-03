@@ -2,7 +2,7 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/138c0f48-01a0-4c41-a6d9-7a661f5a8e84
+GET http://localhost:5134/games/de8f1be6-17f0-4c07-b0ba-17a0d042c285
 
 ###
 POST http://localhost:5134/games
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5134/games/8ade91ce-5373-4a4e-b7fc-471581925fb6
+PUT http://localhost:5134/games/d2ac5a2c-8c07-4b32-aa6b-13da1e33cde2
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5134/games/403d279b-2a3f-44a9-b0ec-1c4ea2f4a204
+DELETE http://localhost:5134/games/de8f1be6-17f0-4c07-b0ba-17a0d042c285
 
 ###
 GET http://localhost:5134/genres

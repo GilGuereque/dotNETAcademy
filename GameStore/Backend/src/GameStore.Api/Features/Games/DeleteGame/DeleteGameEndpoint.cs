@@ -11,7 +11,7 @@ public static class DeleteGameEndpoint
     )
     {
         // DELETE /games/id
-        app.MapDelete("/games/{id}", (Guid id) =>
+        app.MapDelete("/{id}", (Guid id) =>
         {
             data.RemoveGame(id);
 
