@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using GameStore.Api.Data;
+using GameStore.Api.Features.Games.GetGames;
 using GameStore.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,17 +11,8 @@ const string GetGameEndpointName = "GetGame";
 
 GameStoreData data = new();
 
-// the request pipeline
-
 // GET /games (retrieve all existing games)
-app.MapGet("/games", () => data.GetGames()
-                                .Select(game => new GameSummaryDto(
-                                    game.Id,
-                                    game.Name,
-                                    game.Genre.Name,
-                                    game.Price,
-                                    game.ReleaseDate
-                                )));
+app.MapGetGames(data);
 
 // GET /games/id (retrieve a specific game)
 app.MapGet("/games/{id}", (Guid id) =>
@@ -126,14 +118,6 @@ public record GameDetailsDto(
     decimal Price,
     DateOnly ReleaseDate,
     string Description
-);
-
-public record GameSummaryDto(
-    Guid Id,
-    string Name,
-    string Genre,
-    decimal Price,
-    DateOnly ReleaseDate
 );
 
 public record CreateGameDto(
