@@ -111,15 +111,6 @@ app.MapGet("/genres", () =>
 
 app.Run();
 
-public record GameDetailsDto(
-    Guid Id,
-    string Name,
-    Guid GenreId,
-    decimal Price,
-    DateOnly ReleaseDate,
-    string Description
-);
-
 public record CreateGameDto(
     [Required][StringLength(50)] string Name,
     Guid GenreId,
