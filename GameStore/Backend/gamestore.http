@@ -2,7 +2,7 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/12cafc15-ca4f-4017-bc96-0322c7abd3a8
+GET http://localhost:5134/games/8ade91ce-5373-4a4e-b7fc-471581925fb6
 
 ###
 POST http://localhost:5134/games
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5134/games/12cafc15-ca4f-4017-bc96-0322c7abd3a8
+PUT http://localhost:5134/games/8ade91ce-5373-4a4e-b7fc-471581925fb6
 Content-Type: application/json
 
 {

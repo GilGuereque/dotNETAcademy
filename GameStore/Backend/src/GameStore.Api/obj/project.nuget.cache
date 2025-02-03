@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aayO3FrYpvU=",
+  "dgSpecHash": "SU5lkHtW5Ec=",
   "success": true,
-  "projectFilePath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+  "projectFilePath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\GameStore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prakt\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\prakt\\.nuget\\packages\\minimalapis.extensions\\0.11.0\\minimalapis.extensions.0.11.0.nupkg.sha512",
