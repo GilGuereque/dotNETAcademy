@@ -11,8 +11,8 @@ builder.Services.AddTransient<GameStoreData>();
 var app = builder.Build();
 
 // All games related endpoints
-app.MapGames(data);
+app.MapGames();
 // Genres related endpoints
-app.MapGenres(data);
+app.MapGenres();
 
 app.Run();
