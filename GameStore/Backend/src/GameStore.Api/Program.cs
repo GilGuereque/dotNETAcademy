@@ -4,9 +4,11 @@ using GameStore.Api.Features.Genres;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+// REGISTER SERVICES HERE
+// You must register the services before you build constructing the app
+builder.Services.AddTransient<GameStoreData>();
 
-GameStoreData data = new();
+var app = builder.Build();
 
 // All games related endpoints
 app.MapGames(data);
