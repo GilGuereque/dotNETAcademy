@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // REGISTER SERVICES HERE
 // You must register the services before you build constructing the app
-builder.Services.AddTransient<GameStoreData>();
+builder.Services.AddTransient<GameDataLogger>();
+builder.Services.AddScoped<GameStoreData>();
 
 var app = builder.Build();
 
