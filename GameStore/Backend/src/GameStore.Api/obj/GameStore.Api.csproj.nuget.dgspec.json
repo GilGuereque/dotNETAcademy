@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {}
+    "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\GameStore.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {
+    "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\GameStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+        "projectUniqueName": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\GameStore.Api.csproj",
         "projectName": "GameStore.Api",
-        "projectPath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+        "projectPath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\GameStore.Api.csproj",
         "packagesPath": "C:\\Users\\prakt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\obj\\",
+        "outputPath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
