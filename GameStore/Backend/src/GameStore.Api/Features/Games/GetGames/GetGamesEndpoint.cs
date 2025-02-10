@@ -12,7 +12,7 @@ public static class GetGamesEndpoint
                                 .Select(game => new GameSummaryDto(
             game.Id,
             game.Name,
-            game.Genre.Name,
+            game.Genre!.Name,
             game.Price,
             game.ReleaseDate
         )));

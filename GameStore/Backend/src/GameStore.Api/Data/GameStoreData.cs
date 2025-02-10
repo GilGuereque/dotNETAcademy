@@ -24,6 +24,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Street Fighter II",
                 Genre = genres[0],
+                GenreId = genres[0].Id,
                 Price = 19.99M,
                 ReleaseDate = new DateOnly(1992, 7, 15),
                 Description = "Street Fighter II is a legendary arcade fighting game that revolutionized the genre with its intense one-on-one battles, diverse roster of fighters, and deep combo mechanics. Players compete in fast-paced, skill-based combat, executing special moves and combos to defeat opponents."
@@ -32,6 +33,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Final Fantasy XIV",
                 Genre = genres[1],
+                GenreId = genres[1].Id,
                 Price = 59.99M,
                 ReleaseDate = new DateOnly(2010, 9, 30),
                 Description = "Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) set in the expansive world of Eorzea. Featuring an engaging storyline, deep character customization, and epic large-scale battles, players embark on adventures with friends, complete challenging raids, and explore breathtaking environments."
@@ -40,6 +42,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "World of Warcraft",
                 Genre = genres[2],
+                GenreId = genres[2].Id,
                 Price = 49.99M,
                 ReleaseDate = new DateOnly(2004, 11, 23),
                 Description = "World of Warcraft is a groundbreaking MMORPG that immerses players in the vast world of Azeroth. With rich lore, diverse playable races and classes, and thrilling PvE and PvP gameplay, players engage in epic quests, dungeons, and large-scale battles in an ever-evolving online world."
