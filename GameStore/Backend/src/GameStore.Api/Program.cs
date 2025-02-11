@@ -1,7 +1,6 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
