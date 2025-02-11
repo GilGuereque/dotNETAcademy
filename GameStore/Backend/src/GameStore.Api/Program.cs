@@ -4,7 +4,8 @@ using GameStore.Api.Features.Genres;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connString = "Data Source=GameStore.db";
+var connString = builder.Configuration.GetConnectionString("GameStore");
+builder.Services.AddSqlite<GameStoreContext>(connString); //simpler way for connString
 
 /* What service lifetime to use for a dbContext?
 - DbContext is designed to be used as a single Unit of Work
@@ -21,8 +22,6 @@ USE: Scoped service lifetime
 - There is only one thread executing each client request at a given time
 - Ensure each request gets a separate DbContext instance
 */
-
-builder.Services.AddSqlite<GameStoreContext>(connString); //simpler way for connString
 
 // You must register the services before you build constructing the app
 builder.Services.AddTransient<GameDataLogger>();
