@@ -33,5 +33,6 @@ var app = builder.Build();
 app.MapGames();
 // Genres related endpoints
 app.MapGenres();
+app.MigrateDb();
 
 app.Run();
