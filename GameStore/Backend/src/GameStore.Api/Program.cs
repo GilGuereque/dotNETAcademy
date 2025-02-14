@@ -34,5 +34,6 @@ app.MapGames();
 // Genres related endpoints
 app.MapGenres();
 app.MigrateDb();
+app.SeedDb();
 
 app.Run();
