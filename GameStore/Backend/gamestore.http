@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
     "name": "Minecraft",
-    "genreId": "28b7722e-aa09-4bf7-ac06-d8632b50f5dd",
+    "genreId": "C064029D-E4A2-4597-8F90-414C7A81F657",
     "price": 19.99,
     "releaseDate": "2011-11-18",
     "description": "Minecraft is a sandbox adventure game that allows players to explore, build, and survive in an infinite, block-based world. Featuring limitless creativity, players can construct massive structures, mine for resources, craft tools, and battle hostile creatures. With multiple game modes including Survival, Creative, and Multiplayer, Minecraft offers a unique blend of exploration, creativity, and strategy, making it one of the most popular and influential games of all time."
