@@ -10,28 +10,22 @@ public static class CreateGameEndpoint
     public static void MapCreateGame(this IEndpointRouteBuilder app)
     {
         // POST /games (add a new game)
-        app.MapPost("/", (CreateGameDto gameDto, GameStoreData data, GameDataLogger logger) =>
+        app.MapPost("/", (
+            CreateGameDto gameDto,
+            GameStoreContext dbContext) =>
         {
-            var genre = data.GetGenre(gameDto.GenreId);
-
-            if (genre is null)
-            {
-                return Results.BadRequest("Invalid Genre ID. Please use a valid one.");
-            }
-
             var game = new Game
             {
                 Name = gameDto.Name,
-                Genre = genre,
-                GenreId = genre.Id,
+                GenreId = gameDto.GenreId,
                 Price = gameDto.Price,
                 ReleaseDate = gameDto.ReleaseDate,
                 Description = gameDto.Description
             };
 
-            data.AddGame(game);
+            dbContext.Games.Add(game);
 
-            logger.PrintGames();
+            dbContext.SaveChanges();
 
             return Results.CreatedAtRoute(
                 EndpointNames.GetGame,
@@ -39,7 +33,7 @@ public static class CreateGameEndpoint
                 new GameDetailsDto(
                     game.Id,
                     game.Name,
-                    game.Genre.Id,
+                    game.GenreId,
                     game.Price,
                     game.ReleaseDate,
                     game.Description
