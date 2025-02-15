@@ -6,7 +6,7 @@ public class Game
 
     public required string Name { get; set; } //? makes the string able to be null, otherwise you would assign it an empty string
 
-    public required Genre? Genre { get; set; }
+    public Genre? Genre { get; set; }
 
     public Guid GenreId { get; set; }
 

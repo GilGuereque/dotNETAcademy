@@ -1,6 +1,6 @@
-using System;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
+using GameStore.Api.Features.Genres.GetGenres;
 using GameStore.Api.Models;
 
 namespace GameStore.Api.Features.Games.CreateGame;
