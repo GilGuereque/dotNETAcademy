@@ -9,26 +9,26 @@ POST http://localhost:5134/games
 Content-Type: application/json
 
 {
-    "name": "Minecraft",
-    "genreId": "C064029D-E4A2-4597-8F90-414C7A81F657",
-    "price": 19.99,
-    "releaseDate": "2011-11-18",
-    "description": "Minecraft is a sandbox adventure game that allows players to explore, build, and survive in an infinite, block-based world. Featuring limitless creativity, players can construct massive structures, mine for resources, craft tools, and battle hostile creatures. With multiple game modes including Survival, Creative, and Multiplayer, Minecraft offers a unique blend of exploration, creativity, and strategy, making it one of the most popular and influential games of all time."
+    "name": "TEST GAME",
+    "genreId": "EAB839B0-9695-45B0-956E-C7EACB486B23",
+    "price": 99.99,
+    "releaseDate": "1992-07-15",
+    "description": "Test Description"
 }
 
 ###
-PUT http://localhost:5134/games/d5d7cf2b-647f-4896-b5f4-512060095018
+PUT http://localhost:5134/games/3BEF4AD3-B5F0-4BAC-A341-042D2B5C2564
 Content-Type: application/json
 
 {
     "name": "Street Fighter II Turbo",
-    "genreId": "524c6596-dc0c-4de6-ab5e-eebcbeefa162",
-    "price": 9.99,
+    "genreId": "EAB839B0-9695-45B0-956E-C7EACB486B23",
+    "price": 19.99,
     "releaseDate": "1992-07-15",
     "description": "Street Fighter II Turbo is a high-speed arcade fighting game that refines the classic Street Fighter II experience with faster gameplay, new move sets, and enhanced competitive balance. Players choose from a roster of iconic fighters, each with unique abilities, to engage in intense one-on-one battles. Featuring improved mechanics, faster combat, and the introduction of Turbo mode, this edition delivers the ultimate test of skill and strategy for fighting game enthusiasts."
 }
 
 ###
-DELETE http://localhost:5134/games/bdb7c34f-55e4-4815-82ec-953e24de7bc1
+DELETE http://localhost:5134/games/a038186c-40a2-475f-8da8-6261d829a29c
 ###
 GET http://localhost:5134/genres
