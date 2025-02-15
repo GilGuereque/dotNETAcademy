@@ -33,7 +33,7 @@ var app = builder.Build();
 app.MapGames();
 // Genres related endpoints
 app.MapGenres();
-app.MigrateDb();
-app.SeedDb();
+// Migrate & seed the DB
+app.InitializeDb();
 
 app.Run();

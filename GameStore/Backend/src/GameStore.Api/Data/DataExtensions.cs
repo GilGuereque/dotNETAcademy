@@ -6,8 +6,15 @@ namespace GameStore.Api.Data;
 
 public static class DataExtensions
 {
+    // Refactor to invoke migrate DB and seed the DB with data
+    public static void InitializeDb(this WebApplication app)
+    {
+        app.MigrateDb();
+        app.SeedDb();
+    }
+
     // Migrating the DB at the start of the app running
-    public static void MigrateDb(this WebApplication app)
+    private static void MigrateDb(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider
@@ -16,7 +23,7 @@ public static class DataExtensions
     }
 
     // Pre-populates or Seeds the DB
-    public static void SeedDb(this WebApplication app)
+    private static void SeedDb(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider
