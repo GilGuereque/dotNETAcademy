@@ -24,8 +24,7 @@ USE: Scoped service lifetime
 */
 
 // You must register the services before you build constructing the app
-builder.Services.AddTransient<GameDataLogger>();
-builder.Services.AddSingleton<GameStoreData>();
+// TODO: Delete Data/GameStoreData.cs & Data/GameStoreLogger.cs files (no longer needed)
 
 var app = builder.Build();
 
