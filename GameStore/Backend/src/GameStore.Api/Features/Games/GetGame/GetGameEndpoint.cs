@@ -1,4 +1,3 @@
-using System;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
@@ -10,10 +9,10 @@ public static class GetGameEndpoint
     public static void MapGetGame(this IEndpointRouteBuilder app)
     {
         // GET /games/id (retrieve a specific game)
-        app.MapGet("/{id}", (Guid id, GameStoreData data) =>
+        app.MapGet("/{id}", (Guid id, GameStoreContext dbContext) =>
         {
 
-            Game? game = data.GetGame(id);
+            Game? game = dbContext.Games.Find(id);
 
             return game is null ? Results.NotFound() : Results.Ok(
                 new GameDetailsDto(
