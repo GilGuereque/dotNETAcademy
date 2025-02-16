@@ -9,11 +9,11 @@ POST http://localhost:5134/games
 Content-Type: application/json
 
 {
-    "name": "Final Fantasy VII Remake",
-    "genreId": "68fdda7c-55c9-4274-8d7a-2d914997ce58",
-    "price": 69.99,
-    "releaseDate": "2020-04-10",
-    "description": "Final Fantasy VII Remake reimagines the classic RPG with stunning visuals, real-time combat, and an expanded story. Play as Cloud Strife, a former SOLDIER turned mercenary, joining AVALANCHE to fight the corrupt Shinra Corporation. Explore Midgar like never before, experience deep character development, and engage in intense battles in this action-packed remake blending nostalgia with modern gameplay."
+    "name": "Guilty Gear Strive",
+    "genreId": "eab839b0-9695-45b0-956e-c7eacb486b23",
+    "price": 59.99,
+    "releaseDate": "2021-06-11",
+    "description": "Guilty Gear Strive is a high-energy 2D fighting game that redefines the franchise with stunning anime-style visuals, fluid combat, and new mechanics like the Wall Break system. Featuring an expansive roster of unique characters, deep strategic gameplay, and a gripping story mode, Strive delivers an exhilarating fighting experience for both newcomers and veterans."
 }
 
 ###
