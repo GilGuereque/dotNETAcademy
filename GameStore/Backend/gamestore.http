@@ -2,33 +2,33 @@
 GET http://localhost:5134/games
 
 ###
-GET http://localhost:5134/games/3BEF4AD3-B5F0-4BAC-A341-042D2B5C2564
+GET http://localhost:5134/games/ab021e08-2edf-4000-918f-5538b8ed472b
 
 ###
 POST http://localhost:5134/games
 Content-Type: application/json
 
 {
-    "name": "TEST GAME",
-    "genreId": "EAB839B0-9695-45B0-956E-C7EACB486B23",
-    "price": 99.99,
-    "releaseDate": "1992-07-15",
-    "description": "Test Description"
+    "name": "TEST",
+    "genreId": "68fdda7c-55c9-4274-8d7a-2d914997ce58",
+    "price": 59.99,
+    "releaseDate": "2010-09-30",
+    "description": "TEST"
 }
 
 ###
-PUT http://localhost:5134/games/3BEF4AD3-B5F0-4BAC-A341-042D2B5C2564
+PUT http://localhost:5134/games/ab021e08-2edf-4000-918f-5538b8ed472b
 Content-Type: application/json
 
 {
-    "name": "Street Fighter II Turbo",
-    "genreId": "EAB839B0-9695-45B0-956E-C7EACB486B23",
-    "price": 19.99,
-    "releaseDate": "1992-07-15",
-    "description": "Street Fighter II Turbo is a high-speed arcade fighting game that refines the classic Street Fighter II experience with faster gameplay, new move sets, and enhanced competitive balance. Players choose from a roster of iconic fighters, each with unique abilities, to engage in intense one-on-one battles. Featuring improved mechanics, faster combat, and the introduction of Turbo mode, this edition delivers the ultimate test of skill and strategy for fighting game enthusiasts."
+    "name": "Final Fantasy XIV",
+    "genreId": "68fdda7c-55c9-4274-8d7a-2d914997ce58",
+    "price": 49.99,
+    "releaseDate": "2010-09-30",
+    "description": "Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) set in the expansive world of Eorzea. Featuring an engaging storyline, deep character customization, and epic large-scale battles, players embark on adventures with friends, complete challenging raids, and explore breathtaking environments."
 }
 
 ###
-DELETE http://localhost:5134/games/a038186c-40a2-475f-8da8-6261d829a29c
+DELETE http://localhost:5134/games/59b706ad-8193-48d0-9c28-fac6bdf04fe5
 ###
 GET http://localhost:5134/genres
