@@ -1,0 +1,47 @@
+/* _content/GameStore.Frontend/Components/Layout/MainLayout.razor.rz.scp.css */
+#blazor-error-ui[b-7r57v3frez] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-7r57v3frez] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/GameStore.Frontend/Components/Pages/Home.razor.rz.scp.css */
+.card[b-dh5trppldm] {
+    display: grid;
+    grid-template-rows: 1fr auto; /* 1fr for image container, auto for card body */
+    height: 100%; /* Ensures the card stretches to the height of its container */
+}
+
+.card-img-container[b-dh5trppldm] {
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.card-img-top[b-dh5trppldm] {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra space below the image */
+}
+
+.card .card-title[b-dh5trppldm] {
+	transition: color 0.2s ease-in-out;
+}
+
+.card .card-title:hover[b-dh5trppldm] {
+	color: #5f4dee;
+}
+
+.card:hover[b-dh5trppldm] {
+	box-shadow: 0 0 10px #5f4dee;
+}

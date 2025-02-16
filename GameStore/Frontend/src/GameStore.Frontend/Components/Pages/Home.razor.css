@@ -1,0 +1,27 @@
+﻿.card {
+    display: grid;
+    grid-template-rows: 1fr auto; /* 1fr for image container, auto for card body */
+    height: 100%; /* Ensures the card stretches to the height of its container */
+}
+
+.card-img-container {
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.card-img-top {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra space below the image */
+}
+
+.card .card-title {
+	transition: color 0.2s ease-in-out;
+}
+
+.card .card-title:hover {
+	color: #5f4dee;
+}
+
+.card:hover {
+	box-shadow: 0 0 10px #5f4dee;
+}

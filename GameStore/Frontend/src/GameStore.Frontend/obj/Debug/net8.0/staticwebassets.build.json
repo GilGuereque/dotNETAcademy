@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "e5JXtMmHe1C4qZbhP7xVoMv57P1c34y/9Jzg6YE2KGU=",
+  "Source": "GameStore.Frontend",
+  "BasePath": "_content/GameStore.Frontend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GameStore.Frontend\\wwwroot",
+      "Source": "GameStore.Frontend",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "BasePath": "_content/GameStore.Frontend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "SourceId": "GameStore.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/GameStore.Frontend",
+      "RelativePath": "GameStore.Frontend#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "4888avku7t",
+      "Integrity": "pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "SourceId": "GameStore.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/GameStore.Frontend",
+      "RelativePath": "GameStore.Frontend#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "4888avku7t",
+      "Integrity": "pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "SourceId": "GameStore.Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "BasePath": "_content/GameStore.Frontend",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9tsjre4pz5",
+      "Integrity": "Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "SourceId": "GameStore.Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "BasePath": "_content/GameStore.Frontend",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2tkkz35f8w",
+      "Integrity": "qloXYKVcx2Kn3x14r+gZKIJ5wCu1mAGreRNOEn3fKG8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.9tsjre4pz5.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9tsjre4pz5"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.2tkkz35f8w.png",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137043"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qloXYKVcx2Kn3x14r+gZKIJ5wCu1mAGreRNOEn3fKG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2tkkz35f8w"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qloXYKVcx2Kn3x14r+gZKIJ5wCu1mAGreRNOEn3fKG8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137043"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qloXYKVcx2Kn3x14r+gZKIJ5wCu1mAGreRNOEn3fKG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qloXYKVcx2Kn3x14r+gZKIJ5wCu1mAGreRNOEn3fKG8="
+        }
+      ]
+    },
+    {
+      "Route": "GameStore.Frontend.4888avku7t.bundle.scp.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4888avku7t"
+        },
+        {
+          "Name": "label",
+          "Value": "GameStore.Frontend.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o="
+        }
+      ]
+    },
+    {
+      "Route": "GameStore.Frontend.4888avku7t.styles.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4888avku7t"
+        },
+        {
+          "Name": "label",
+          "Value": "GameStore.Frontend.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o="
+        }
+      ]
+    },
+    {
+      "Route": "GameStore.Frontend.bundle.scp.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o="
+        }
+      ]
+    },
+    {
+      "Route": "GameStore.Frontend.styles.css",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o="
+        }
+      ]
+    }
+  ]
+}
