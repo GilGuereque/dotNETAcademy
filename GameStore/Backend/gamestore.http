@@ -9,11 +9,11 @@ POST http://localhost:5134/games
 Content-Type: application/json
 
 {
-    "name": "TEST",
+    "name": "Final Fantasy VII Remake",
     "genreId": "68fdda7c-55c9-4274-8d7a-2d914997ce58",
-    "price": 59.99,
-    "releaseDate": "2010-09-30",
-    "description": "TEST"
+    "price": 69.99,
+    "releaseDate": "2020-04-10",
+    "description": "Final Fantasy VII Remake reimagines the classic RPG with stunning visuals, real-time combat, and an expanded story. Play as Cloud Strife, a former SOLDIER turned mercenary, joining AVALANCHE to fight the corrupt Shinra Corporation. Explore Midgar like never before, experience deep character development, and engage in intense battles in this action-packed remake blending nostalgia with modern gameplay."
 }
 
 ###
