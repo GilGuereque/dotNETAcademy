@@ -1,4 +1,3 @@
-using System;
 using GameStore.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,23 +6,23 @@ namespace GameStore.Api.Data;
 public static class DataExtensions
 {
     // Refactor to invoke migrate DB and seed the DB with data
-    public static void InitializeDb(this WebApplication app)
+    public static async Task InitializeDbAsync(this WebApplication app)
     {
-        app.MigrateDb();
-        app.SeedDb();
+        await app.MigrateDbAsync();
+        await app.SeedDbAsync();
     }
 
     // Migrating the DB at the start of the app running
-    private static void MigrateDb(this WebApplication app)
+    private static async Task MigrateDbAsync(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider
                                           .GetRequiredService<GameStoreContext>();
-        dbContext.Database.Migrate(); // this method takes care of the .NET EF db update
+        await dbContext.Database.MigrateAsync(); // this method takes care of the .NET EF db update
     }
 
     // Pre-populates or Seeds the DB
-    private static void SeedDb(this WebApplication app)
+    private static async Task SeedDbAsync(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider
@@ -39,7 +38,7 @@ public static class DataExtensions
                 new Genre { Name = "Action Adventure" }
             );
             // Save changes made to DB
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
     }
 }
