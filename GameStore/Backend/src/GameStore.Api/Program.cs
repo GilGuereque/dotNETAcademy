@@ -1,10 +1,11 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
-using GameStore.Api.Shared.Timing;
 using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddProblemDetails(); // Add support for ProblemDetails responses (RFC 7807)
 
 var connString = builder.Configuration.GetConnectionString("GameStore");
 builder.Services.AddSqlite<GameStoreContext>(connString); //simpler way for connString
@@ -48,6 +49,14 @@ app.MapGenres();
 // Middleware:
 // app.UseMiddleware<RequestTimingMiddleware>(); // Logs the time to process the request and response back to the client
 app.UseHttpLogging(); // Logs all HTTP requests and responses
+
+if (!app.Environment.IsDevelopment()) // Only run in development environment
+{
+    app.UseExceptionHandler(); // Handle exceptions and return a 500 response
+}
+
+app.UseStatusCodePages(); // Return a status code page for 404, 500, etc. responses
+
 
 // Migrate & seed the DB
 await app.InitializeDbAsync();
