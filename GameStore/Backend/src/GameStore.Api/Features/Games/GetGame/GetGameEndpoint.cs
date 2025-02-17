@@ -1,6 +1,7 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
+using Microsoft.Data.Sqlite;
 
 namespace GameStore.Api.Features.Games.GetGame;
 
@@ -11,8 +12,7 @@ public static class GetGameEndpoint
         // GET /games/id (retrieve a specific game)
         app.MapGet("/{id}", async (Guid id, GameStoreContext dbContext) =>
         {
-
-            Game? game = await dbContext.Games.FindAsync(id);
+            Game? game = await FindGameAsync(id, dbContext);
 
             return game is null ? Results.NotFound() : Results.Ok(
                 new GameDetailsDto(
@@ -28,4 +28,11 @@ public static class GetGameEndpoint
         .WithName(EndpointNames.GetGame); //Identify endpoint url for GET
     }
 
+    private static async Task<Game?> FindGameAsync(
+        Guid id,
+        GameStoreContext dbContext)
+    {
+        throw new SqliteException("The database is not available!", 14);
+        return await dbContext.Games.FindAsync(id);
+    }
 }
