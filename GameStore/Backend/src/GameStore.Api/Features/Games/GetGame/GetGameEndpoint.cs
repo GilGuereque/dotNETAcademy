@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
@@ -10,7 +11,10 @@ public static class GetGameEndpoint
     public static void MapGetGame(this IEndpointRouteBuilder app)
     {
         // GET /games/id (retrieve a specific game)
-        app.MapGet("/{id}", async (Guid id, GameStoreContext dbContext) =>
+        app.MapGet("/{id}", async (
+            Guid id,
+            GameStoreContext dbContext,
+            ILogger<Program> Logger) =>
         {
             Game? game = await FindGameAsync(id, dbContext);
 
