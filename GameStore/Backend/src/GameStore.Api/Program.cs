@@ -22,7 +22,44 @@ builder.Services.AddHttpLogging(options =>
     options.CombineLogs = true; // Combine logs from the request and response into a single log entry
 });
 
-/* What service lifetime to use for a dbContext?
+builder.Services.AddEndpointsApiExplorer(); // Services support the generation of documents using OpenAPI
+builder.Services.AddSwaggerGen(); // Building services that enable us to use OpenAPI support
+
+var app = builder.Build();
+
+// All games related endpoints
+app.MapGames();
+// Genres related endpoints
+app.MapGenres();
+
+// Middleware:
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+}
+else
+{
+    app.UseExceptionHandler();
+}
+// app.UseMiddleware<RequestTimingMiddleware>(); // Logs the time to process the request and response back to the client
+app.UseHttpLogging(); // Logs all HTTP requests and responses
+
+if (!app.Environment.IsDevelopment()) // Only run in development environment
+{
+    app.UseExceptionHandler(); // Handle exceptions and return a 500 response
+}
+
+app.UseStatusCodePages(); // Return a status code page for 404, 500, etc. responses
+
+
+// Migrate & seed the DB
+await app.InitializeDbAsync();
+
+app.Run();
+
+
+/* NOTES:
+What service lifetime to use for a dbContext?
 - DbContext is designed to be used as a single Unit of Work
 - DbContext created ---> entity changes tracked -> save changes -> dispose dbContext
 - DB connections are expensive - Don't want to keep them open all the time.
@@ -40,27 +77,3 @@ USE: Scoped service lifetime
 
 // You must register the services before you build constructing the app
 // TODO: Delete Data/GameStoreData.cs & Data/GameStoreLogger.cs files (no longer needed)
-
-var app = builder.Build();
-
-// All games related endpoints
-app.MapGames();
-// Genres related endpoints
-app.MapGenres();
-
-// Middleware:
-// app.UseMiddleware<RequestTimingMiddleware>(); // Logs the time to process the request and response back to the client
-app.UseHttpLogging(); // Logs all HTTP requests and responses
-
-if (!app.Environment.IsDevelopment()) // Only run in development environment
-{
-    app.UseExceptionHandler(); // Handle exceptions and return a 500 response
-}
-
-app.UseStatusCodePages(); // Return a status code page for 404, 500, etc. responses
-
-
-// Migrate & seed the DB
-await app.InitializeDbAsync();
-
-app.Run();
