@@ -1,11 +1,13 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
+using GameStore.Api.Shared.ErrorHandling;
 using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddProblemDetails(); // Add support for ProblemDetails responses (RFC 7807)
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>(); // Add global exception handler
 
 var connString = builder.Configuration.GetConnectionString("GameStore");
 builder.Services.AddSqlite<GameStoreContext>(connString); //simpler way for connString

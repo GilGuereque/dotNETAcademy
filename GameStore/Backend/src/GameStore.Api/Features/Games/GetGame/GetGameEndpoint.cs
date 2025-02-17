@@ -16,7 +16,7 @@ public static class GetGameEndpoint
             GameStoreContext dbContext,
             ILogger<Program> Logger) =>
         {
-            Game? game = await FindGameAsync(id, dbContext);
+            Game? game = await dbContext.Games.FindAsync(id);
 
             return game is null ? Results.NotFound() : Results.Ok(
                 new GameDetailsDto(
@@ -30,13 +30,5 @@ public static class GetGameEndpoint
             );
         })
         .WithName(EndpointNames.GetGame); //Identify endpoint url for GET
-    }
-
-    private static async Task<Game?> FindGameAsync(
-        Guid id,
-        GameStoreContext dbContext)
-    {
-        throw new SqliteException("The database is not available!", 14);
-        return await dbContext.Games.FindAsync(id);
     }
 }
