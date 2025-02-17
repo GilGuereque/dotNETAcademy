@@ -2,7 +2,7 @@
 GET http://localhost:5134/games?pageNumber=2
 
 ###
-GET http://localhost:5134/games/ab021e08-2edf-4000-918f-5538b8ed472b
+GET http://localhost:5134/games/8c1bcb2e-7a01-4ca8-bec5-0403818583ad
 
 ###
 POST http://localhost:5134/games
