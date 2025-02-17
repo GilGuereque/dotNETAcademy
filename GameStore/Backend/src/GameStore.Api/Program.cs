@@ -2,6 +2,7 @@ using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.ErrorHandling;
+using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,9 @@ builder.Services.AddHttpLogging(options =>
 builder.Services.AddEndpointsApiExplorer(); // Services support the generation of documents using OpenAPI
 builder.Services.AddSwaggerGen(); // Building services that enable us to use OpenAPI support
 
+builder.Services.AddHttpContextAccessor()
+                .AddSingleton<FileUploader>();
+
 var app = builder.Build();
 
 // All games related endpoints
@@ -33,24 +37,19 @@ app.MapGames();
 app.MapGenres();
 
 // Middleware:
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment()) // Only run in development environment
 {
-    app.UseSwagger();
+    app.UseSwagger(); // Use Swagger OpenAPI JSON document generation service
+    app.UseSwaggerUI(); // Use Swagger interactice UI service for testing endpoints - http://localhost:5134/swagger/index.html (use backend PORT)
 }
 else
 {
-    app.UseExceptionHandler();
+    app.UseExceptionHandler(); // Handle exceptions and return a 500 response
 }
 // app.UseMiddleware<RequestTimingMiddleware>(); // Logs the time to process the request and response back to the client
 app.UseHttpLogging(); // Logs all HTTP requests and responses
 
-if (!app.Environment.IsDevelopment()) // Only run in development environment
-{
-    app.UseExceptionHandler(); // Handle exceptions and return a 500 response
-}
-
 app.UseStatusCodePages(); // Return a status code page for 404, 500, etc. responses
-
 
 // Migrate & seed the DB
 await app.InitializeDbAsync();

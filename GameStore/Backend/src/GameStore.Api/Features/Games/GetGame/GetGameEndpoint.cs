@@ -1,8 +1,6 @@
-using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
-using Microsoft.Data.Sqlite;
 
 namespace GameStore.Api.Features.Games.GetGame;
 
@@ -29,6 +27,6 @@ public static class GetGameEndpoint
                 )
             );
         })
-        .WithName(EndpointNames.GetGame); //Identify endpoint url for GET
+        .WithName(EndpointNames.GetGame); //Identify endpoint url for GET (Assigns name to the endpoint)
     }
 }
