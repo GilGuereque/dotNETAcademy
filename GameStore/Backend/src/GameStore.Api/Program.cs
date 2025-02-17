@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
@@ -32,6 +33,31 @@ var app = builder.Build();
 app.MapGames();
 // Genres related endpoints
 app.MapGenres();
+
+app.Use(async (context, next) =>
+{
+    var stopwatch = new Stopwatch();
+
+    try
+    {
+        stopwatch.Start();
+
+        await next(context); // call the next middleware in the request pipeline
+    }
+    finally
+    {
+        stopwatch.Stop(); // stop the stopwatch once the response is sent back to the client
+
+        var elapsedMilliseconds = stopwatch.ElapsedMilliseconds; // get the elapsed time in milliseconds
+        app.Logger.LogInformation(
+            "{Requestmethod} {RequestPath} executed with status {Status} in {ElapsedMilliseconds}ms",
+            context.Request.Method,
+            context.Request.Path,
+            context.Response.StatusCode,
+            elapsedMilliseconds); // log the elapsed time
+    }
+});
+
 // Migrate & seed the DB
 await app.InitializeDbAsync();
 
