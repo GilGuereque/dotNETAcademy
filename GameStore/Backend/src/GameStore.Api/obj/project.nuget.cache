@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mYT41k1ZYck=",
+  "dgSpecHash": "maW9Udv95Us=",
   "success": true,
-  "projectFilePath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\GameStore.Api.csproj",
+  "projectFilePath": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prakt\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\prakt\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
