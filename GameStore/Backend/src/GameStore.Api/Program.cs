@@ -1,13 +1,23 @@
-using System.Diagnostics;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.Timing;
+using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connString = builder.Configuration.GetConnectionString("GameStore");
 builder.Services.AddSqlite<GameStoreContext>(connString); //simpler way for connString
+
+// Registers services to be used later in the pipeline (middleware)
+builder.Services.AddHttpLogging(options =>
+{
+    options.LoggingFields = HttpLoggingFields.RequestMethod |
+                            HttpLoggingFields.RequestPath |
+                            HttpLoggingFields.ResponseStatusCode |
+                            HttpLoggingFields.Duration; // Log all fields from the request and response
+    options.CombineLogs = true; // Combine logs from the request and response into a single log entry
+});
 
 /* What service lifetime to use for a dbContext?
 - DbContext is designed to be used as a single Unit of Work
@@ -34,8 +44,10 @@ var app = builder.Build();
 app.MapGames();
 // Genres related endpoints
 app.MapGenres();
-// Middleware to log the request time to process the request and response back to the client
-app.UseMiddleware<RequestTimingMiddleware>();
+
+// Middleware:
+// app.UseMiddleware<RequestTimingMiddleware>(); // Logs the time to process the request and response back to the client
+app.UseHttpLogging(); // Logs all HTTP requests and responses
 
 // Migrate & seed the DB
 await app.InitializeDbAsync();
