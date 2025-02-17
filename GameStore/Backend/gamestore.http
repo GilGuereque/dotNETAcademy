@@ -1,5 +1,5 @@
 // Send GET http request
-GET http://localhost:5134/games?name=final
+GET http://localhost:5134/games?pageNumber=2
 
 ###
 GET http://localhost:5134/games/ab021e08-2edf-4000-918f-5538b8ed472b
@@ -9,11 +9,11 @@ POST http://localhost:5134/games
 Content-Type: application/json
 
 {
-    "name": "Guilty Gear Strive",
+    "name": "Tekken 8",
     "genreId": "eab839b0-9695-45b0-956e-c7eacb486b23",
     "price": 59.99,
-    "releaseDate": "2021-06-11",
-    "description": "Guilty Gear Strive is a high-energy 2D fighting game that redefines the franchise with stunning anime-style visuals, fluid combat, and new mechanics like the Wall Break system. Featuring an expansive roster of unique characters, deep strategic gameplay, and a gripping story mode, Strive delivers an exhilarating fighting experience for both newcomers and veterans."
+    "releaseDate": "2024-01-26",
+    "description": "Tekken 8 is a 2024 fighting game developed by Bandai Namco Studios and Arika and published by Bandai Namco Entertainment. It is the eighth main installment in the Tekken series and the first one to debut on home systems instead of arcades."
 }
 
 ###
