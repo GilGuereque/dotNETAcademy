@@ -18,7 +18,7 @@ public static class GetGamesEndpoint
 
             var filteredGames = dbContext.Games
                                 .Where(game => string.IsNullOrWhiteSpace(request.Name)
-                                        || game.Name.Contains(request.Name)); // Filter games by name (if provided)
+                                        || EF.Functions.Like(game.Name, $"%{request.Name}%")); // Filter by name (case-insensitive)
 
 
             var gamesOnPage = await filteredGames // Get the games on the current page (page number and page size)
