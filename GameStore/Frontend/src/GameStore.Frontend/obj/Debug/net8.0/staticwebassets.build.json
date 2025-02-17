@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e5JXtMmHe1C4qZbhP7xVoMv57P1c34y/9Jzg6YE2KGU=",
+  "Hash": "XA5nPQ6ARDC2bHw7S0dVct81K85Xf6N79nl1M7M4Q7U=",
   "Source": "GameStore.Frontend",
   "BasePath": "_content/GameStore.Frontend",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GameStore.Frontend\\wwwroot",
       "Source": "GameStore.Frontend",
-      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
       "BasePath": "_content/GameStore.Frontend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "GameStore.Frontend#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css"
+      "OriginalItemSpec": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css"
     },
     {
-      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "GameStore.Frontend#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "pMGz1y9YH0Muk3JOqNpn+rAorar8FbmEij3P2RaOJ8o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
       "SourceId": "GameStore.Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\",
       "BasePath": "_content/GameStore.Frontend",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -104,7 +104,7 @@
   "Endpoints": [
     {
       "Route": "app.9tsjre4pz5.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -125,7 +125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -149,7 +149,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -170,7 +170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186,7 +186,7 @@
     },
     {
       "Route": "favicon.2tkkz35f8w.png",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -207,7 +207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -231,7 +231,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -252,7 +252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:31:30 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -268,7 +268,7 @@
     },
     {
       "Route": "GameStore.Frontend.4888avku7t.bundle.scp.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -289,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -313,7 +313,7 @@
     },
     {
       "Route": "GameStore.Frontend.4888avku7t.styles.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -334,7 +334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -358,7 +358,7 @@
     },
     {
       "Route": "GameStore.Frontend.bundle.scp.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -379,7 +379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -395,7 +395,7 @@
     },
     {
       "Route": "GameStore.Frontend.styles.css",
-      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Frontend\\src\\GameStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GameStore.Frontend.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -416,7 +416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 00:36:55 GMT"
+          "Value": "Mon, 17 Feb 2025 21:06:57 GMT"
         },
         {
           "Name": "Cache-Control",
