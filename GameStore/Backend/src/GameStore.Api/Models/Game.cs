@@ -15,4 +15,6 @@ public class Game
     public DateOnly ReleaseDate { get; set; } // we only care about the specific date
 
     public required string Description { get; set; }
+
+    public required string ImageUri { get; set; }
 }

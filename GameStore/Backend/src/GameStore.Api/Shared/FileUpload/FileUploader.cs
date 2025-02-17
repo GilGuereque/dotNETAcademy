@@ -27,7 +27,7 @@ public class FileUploader(
         var permittedExtensions = new[] { ".jpg", ".jpeg", ".png", ".pdf"};
         var fileExtension = Path.GetExtension(file.FileName).ToLowerInvariant();
 
-        if (string.IsNullOrEmpty(fileExtensions) || !permittedExtensions.Contains(fileExtension))
+        if (string.IsNullOrEmpty(fileExtension) || !permittedExtensions.Contains(fileExtension))
         {
             result.IsSuccess = false;
             result.ErrorMessage = "This is an invalid file type.";
@@ -40,7 +40,7 @@ public class FileUploader(
             Directory.CreateDirectory(uploadFolder);
         }
 
-        var safeFileName = $"{Guid.NewGuid(){fileExtension}}";
+        var safeFileName = $"{Guid.NewGuid()}{fileExtension}";
         var fullPath = Path.Combine(uploadFolder, safeFileName);
 
         using var stream = new FileStream(fullPath, FileMode.Create);
