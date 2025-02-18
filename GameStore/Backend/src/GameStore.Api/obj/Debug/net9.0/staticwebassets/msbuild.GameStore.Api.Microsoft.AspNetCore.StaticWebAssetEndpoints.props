@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/GameStore.Api/GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GameImages\026af0c4-8fde-4787-9322-318a94393801.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JqwnDW4vMlJK3ituLEcIH/T\u002B\u002BLD9QUfgxDuPCUED0ko="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"487267"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JqwnDW4vMlJK3ituLEcIH/T\u002B\u002BLD9QUfgxDuPCUED0ko=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Feb 2025 01:06:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GameStore.Api/GameImages/026af0c4-8fde-4787-9322-318a94393801.mw59y59sus.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GameImages\026af0c4-8fde-4787-9322-318a94393801.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mw59y59sus"},{"Name":"integrity","Value":"sha256-JqwnDW4vMlJK3ituLEcIH/T\u002B\u002BLD9QUfgxDuPCUED0ko="},{"Name":"label","Value":"_content/GameStore.Api/GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"487267"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JqwnDW4vMlJK3ituLEcIH/T\u002B\u002BLD9QUfgxDuPCUED0ko=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Feb 2025 01:06:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

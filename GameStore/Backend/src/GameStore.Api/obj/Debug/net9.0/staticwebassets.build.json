@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cV3VhMvpld8mHHtvwSy++sEDa1bKzUxdcSV6rlAdmfo=",
+  "Hash": "hvUYmC3dfIDHxzNxkOjcBKXq/EL8QviHvOWOd+pxDmo=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
@@ -15,6 +15,111 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "SourceId": "GameStore.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "BasePath": "_content/GameStore.Api",
+      "RelativePath": "GameImages/026af0c4-8fde-4787-9322-318a94393801#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mw59y59sus",
+      "Integrity": "JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        }
+      ]
+    },
+    {
+      "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.mw59y59sus.jpg",
+      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mw59y59sus"
+        },
+        {
+          "Name": "label",
+          "Value": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        }
+      ]
+    }
+  ]
 }

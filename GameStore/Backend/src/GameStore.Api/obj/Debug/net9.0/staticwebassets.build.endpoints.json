@@ -1,5 +1,88 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "AssetFile": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        }
+      ]
+    },
+    {
+      "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.mw59y59sus.jpg",
+      "AssetFile": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mw59y59sus"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        },
+        {
+          "Name": "label",
+          "Value": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg"
+        }
+      ]
+    }
+  ]
 }
