@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hvUYmC3dfIDHxzNxkOjcBKXq/EL8QviHvOWOd+pxDmo=",
+  "Hash": "4KI9TUyVW1l9gjB09WPSrzU4of001nM2dZ985sz9mII=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GameStore.Api\\wwwroot",
       "Source": "GameStore.Api",
-      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\wwwroot\\",
       "BasePath": "_content/GameStore.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "Identity": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
       "SourceId": "GameStore.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\wwwroot\\",
       "BasePath": "_content/GameStore.Api",
       "RelativePath": "GameImages/026af0c4-8fde-4787-9322-318a94393801#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -41,7 +41,7 @@
   "Endpoints": [
     {
       "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.jpg",
-      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+          "Value": "Tue, 18 Feb 2025 03:28:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -78,7 +78,7 @@
     },
     {
       "Route": "GameImages/026af0c4-8fde-4787-9322-318a94393801.mw59y59sus.jpg",
-      "AssetFile": "D:\\Academia\\Projects\\dotNETAcademy\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
+      "AssetFile": "C:\\Users\\prakt\\source\\repos\\DotNetAcademy\\GameStore\\Backend\\src\\Gamestore.api\\wwwroot\\GameImages\\026af0c4-8fde-4787-9322-318a94393801.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 01:06:31 GMT"
+          "Value": "Tue, 18 Feb 2025 03:28:34 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -36,7 +36,11 @@ public static class DataExtensions
                 new Genre { Name = "Roleplaying" },
                 new Genre { Name = "Massive Multiplayer Online" },
                 new Genre { Name = "Kids and Family" },
-                new Genre { Name = "Action Adventure" }
+                new Genre { Name = "Action Adventure" },
+                new Genre { Name = "Sports and Racing" },
+                new Genre { Name = "Strategy" },
+                new Genre { Name = "Survival" },
+                new Genre { Name = "Horror" }
             );
             // Save changes made to DB
             await dbContext.SaveChangesAsync();
