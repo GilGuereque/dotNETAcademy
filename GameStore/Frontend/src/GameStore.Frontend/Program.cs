@@ -3,6 +3,8 @@ using GameStore.Frontend.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// builder.AddServiceDefaults();
+
 // Add services to the container.
 builder.Services.AddRazorComponents();
 
@@ -33,5 +35,7 @@ app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>();
+
+// app.MapDefaultEndpoints();
 
 app.Run();

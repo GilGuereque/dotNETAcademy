@@ -1,0 +1,37 @@
+﻿@inject NavigationManager Navigation
+
+@if (PaginationInfo is not null)
+{
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(!PaginationInfo.HasPrevious ? "disabled" : null)">
+                <a class="page-link" href="@PaginationUri(PaginationInfo.CurrentPage - 1)">Previous</a>
+            </li>
+
+            @foreach (var pageNumber in GetPageNumbers(PaginationInfo))
+            {
+                <li class="page-item @(pageNumber == PaginationInfo.CurrentPage ? "active" : null)">
+                    <a class="page-link" href="@PaginationUri(pageNumber)">@pageNumber</a>
+                </li>
+            }
+
+            <li class="page-item @(!PaginationInfo.HasNext ? "disabled" : null)">
+                <a class="page-link" href="@PaginationUri(PaginationInfo.CurrentPage + 1)">Next</a>
+            </li>            
+        </ul>
+    </nav>
+}
+
+@code {
+    [Parameter]
+    public PaginationInfo? PaginationInfo { get; set; }
+
+    private IEnumerable<int> GetPageNumbers(PaginationInfo paginationInfo) 
+        => Enumerable.Range(1, paginationInfo.TotalPages);
+
+    private string PaginationUri(int page) => Navigation.GetUriWithQueryParameters(new Dictionary<string, object?>()
+    {
+        { "page", page == 1 ? null : page },
+        { "name", PaginationInfo!.NameSearch ?? null }
+    });          
+}

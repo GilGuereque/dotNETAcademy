@@ -63,6 +63,19 @@ else
                     <label for="releaseDate" class="form-label">Release Date:</label>
                     <InputDate id="releaseDate" @bind-Value="game.ReleaseDate" class="form-control" />
                 </div>
+                <div class="mb-3">
+                    <label for="imageUri" class="form-label">Image:</label>
+                    <input id="imageUri" 
+                            type="file" 
+                            name="game.ImageFile" 
+                            class="form-control" 
+                            accept=".png, .jpg, .jpeg" 
+                            onchange="previewImage(event)"/>
+                    @if (game.ImageUri is not null)
+                    {
+                        <img id="imagePreview" src="@game.ImageUri" class="img-thumbnail mt-2" />
+                    }
+                </div>                     
                 <button type="submit" class="btn btn-primary">Save</button>
                 <a role="button" class="btn btn-secondary" href="/catalog">Cancel</a>
             </EditForm>
@@ -71,6 +84,8 @@ else
 }
 
 @code {
+    private const string defaultImageUri = "https://placehold.co/100";
+
     [Parameter]
     public Guid? Id { get; set; }
 
@@ -99,6 +114,7 @@ else
                 {
                     Name = string.Empty,
                     ReleaseDate = DateOnly.FromDateTime(DateTime.UtcNow),
+                    ImageUri = defaultImageUri,
                     Description = string.Empty
                 };
 

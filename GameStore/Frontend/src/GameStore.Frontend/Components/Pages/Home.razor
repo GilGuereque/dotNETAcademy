@@ -4,4 +4,95 @@
 
 <PageTitle>Game Store</PageTitle>
 
-<h1 style="text-align: center; margin-top: 20px;">Coming Soon!</h1>
+<div class="row mt-2">
+    <div class="col-sm-4">
+        <form id="searchGamesForm" method="post" class="d-flex" role="search" @formname="searchGames" data-permanent>
+            <AntiforgeryToken />
+            <InputText class="form-control me-2" type="search" @bind-Value="NameSearch" onsearch="clearSearch()"
+                placeholder="Search store" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+@if (gamesPage is null || paginationInfo is null)
+{
+    <p class="mt-3"><em>Loading...</em></p>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-5 mt-3">
+        @foreach (var game in gamesPage.Data)
+        {
+            <div class="col mt-4">
+                <a href="game/@game.Id" style="text-decoration: none;">
+                    <div class="card h-100" style="transition: box-shadow 0.2s ease-in-out;">
+                        <div class="card-img-container">
+                            <img class="card-img-top" src="@game.ImageUri" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@game.Name</h5>
+                            <p class="card-text">$@game.Price</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+
+    <div class="row mt-2">
+        <div class="col">
+            <Pagination PaginationInfo="paginationInfo" />
+        </div>
+    </div>
+}
+
+@code {
+    private GamesPage? gamesPage;
+
+    PaginationInfo? paginationInfo;
+
+    const int PageSize = 10;
+
+    [SupplyParameterFromQuery]
+    public int? Page { get; set; }
+
+    [SupplyParameterFromQuery]
+    public string? Name { get; set; }
+
+    [SupplyParameterFromForm]
+    public string? NameSearch { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        HandleSearchBox();
+
+        var pageNumber = Page ?? 1;
+        gamesPage = await Client.GetGamesAsync(pageNumber, PageSize, Name);
+        paginationInfo = new PaginationInfo(pageNumber, gamesPage.TotalPages, Name);
+    }
+
+    private void HandleSearchBox()
+    {
+        if (!string.IsNullOrWhiteSpace(NameSearch))
+        {
+            // The user submitted a search
+            Name = NameSearch;
+            Page = 1;
+        }
+        else if (NameSearch == string.Empty)
+        {
+            // The user cleared the search box
+            Name = null;
+            Page = 1;
+        }
+    }
+}
+
+<script>
+    function clearSearch()
+    {
+        var searchform = document.getElementById("searchGamesForm");
+        searchform.submit();
+    }
+</script>

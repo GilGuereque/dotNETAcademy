@@ -11,4 +11,6 @@ public class GameSummary
     public decimal Price { get; set; }
 
     public DateOnly ReleaseDate { get; set; }
+
+    public required string ImageUri { get; set; }
 }
