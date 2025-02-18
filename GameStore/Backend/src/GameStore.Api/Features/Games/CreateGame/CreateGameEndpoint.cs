@@ -68,6 +68,31 @@ public static class CreateGameEndpoint
                     game.ImageUri
                 ));
         })
-        .WithParameterValidation();
+        .WithParameterValidation()
+        .DisableAntiforgery();
+
     }
 }
+
+// Antiforgery tries to prevent CSRF attacks.
+
+// CSRF stands for Cross-Site Request Forgery
+
+// a type of attack where a malicious website tricks a user's browser
+// into performing actions on another website without their consent.
+
+// To achieve this, a malicious website will try to use the user's 
+// authentication cookie, which browsers will send automatically,
+// to try to make unauthorized requests to your website.
+
+// Your API would process the request because it appears to be valid.
+
+// For our application CSRF attacks are not a concern because:
+
+// 1. CSRF exploits cookies sent by browsers with requests
+
+// 2. Our API will authorize all requests using JWTs,
+//      which come in an Authorization header, not cookies
+
+// 3. The attacker cannot force the user's browser to send a 
+//      custom Authorization header
