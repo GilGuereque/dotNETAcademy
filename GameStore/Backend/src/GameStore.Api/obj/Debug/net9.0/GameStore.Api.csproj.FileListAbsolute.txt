@@ -315,3 +315,4 @@ D:\Academia\Projects\dotNETAcademy\GameStore\Backend\src\GameStore.Api\bin\Debug
 D:\Academia\Projects\dotNETAcademy\GameStore\Backend\src\GameStore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Academia\Projects\dotNETAcademy\GameStore\Backend\src\GameStore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Academia\Projects\dotNETAcademy\GameStore\Backend\src\GameStore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Academia\Projects\dotNETAcademy\GameStore\Backend\src\GameStore.Api\bin\Debug\net9.0\GameStore.Api.staticwebassets.runtime.json

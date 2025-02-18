@@ -31,6 +31,8 @@ builder.Services.AddHttpContextAccessor()
 
 var app = builder.Build();
 
+app.UseStaticFiles(); // Serve the static files in wwwroot folder
+
 // All games related endpoints
 app.MapGames();
 // Genres related endpoints
